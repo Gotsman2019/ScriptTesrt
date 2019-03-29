@@ -11,10 +11,12 @@ public class Boss
 
     public void magic()
     {
-        mp -= 5;
-        if (mp >= 0)
+
+        if (mp >= 5)
         {
+            mp -= 5;
             Debug.Log("魔法攻撃をした。残りMPは" + mp + "。");
+
         }
         else { Debug.Log("MPが足りない為魔法が使えない"); }
     }
